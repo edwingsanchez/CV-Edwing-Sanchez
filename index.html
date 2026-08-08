@@ -108,10 +108,21 @@ ul{
 /* SKILLS */
 
 .skills{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    display:flex;
+    flex-direction:column;
     gap:20px;
     margin-top:15px;
+}
+
+.skills-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.skills-row > div {
+    min-width:180px;
 }
 
 /* COURSES */
@@ -203,55 +214,71 @@ Ingeniería de software<br>
 
 <div class="skills">
 
-<ul>
-    <li>Desarrollo de Landing Pages</li>
-    <li>Desarrollo de Sitios Web </li>
-    <li>Desarollo de Web App </li>
-</ul>
+<div class="skills-row">
+    <div>
+    <ul>
+        <li>Desarrollo de Landing Pages</li>
+        <li>Desarrollo de Sitios Web </li>
+        <li>Desarollo de Web App </li>
+    </ul>
+    </div>
 
-<ul>
-    <li>FrontEnd</li>
-    <li>Backend</li>
-    <li>Fullstack</li>
-</ul>
+    <div>
+    <ul>
+        <li>FrontEnd</li>
+        <li>Backend</li>
+        <li>Fullstack</li>
+    </ul>
+    </div>
 
-<ul>
-    <li>Python</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-</ul>
+    <div>
+    <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    </div>
+</div>
 
-<ul>
-    <li>React</li>
-    <li>Node + Express</li>
-    <li>MongoDB Compass</li>
-    <li>Postgre</li>
-</ul>
+<div class="skills-row">
+    <div>
+    <ul>
+        <li>React</li>
+        <li>Node + Express</li>
+        <li>MongoDB Compass</li>
+        <li>Postgre</li>
+    </ul>
+    </div>
 
-<ul>
-    <li>Git</li>
-    <li>Vercel</li>
-    <li>OnRender</li>
-    <li>MongoDB Compass</li>
-    <li>Supabase</li>
-</ul>
+    <div>
+    <ul>
+        <li>Git</li>
+        <li>Vercel</li>
+        <li>OnRender</li>
+        <li>MongoDB Compass</li>
+        <li>Supabase</li>
+    </ul>
+    </div>
 
-<ul>
-    <li>AWS</li>
-    <li>Amplify</li>
-    <li>Ec2</li>
-    <li>S3</li>
-</ul>
+    <div>
+    <ul>
+        <li>AWS</li>
+        <li>Amplify</li>
+        <li>Ec2</li>
+        <li>S3</li>
+    </ul>
+    </div>
 
-<ul>
-    <li>n8n</li>
-    <li>Ollama</li>
-    <li>Hugginface</li>
-    <li>RunPod</li>
-</ul>
-
-
+    <div>
+    <ul>
+        <li>n8n</li>
+        <li>Ollama</li>
+        <li>Hugginface</li>
+        <li>RunPod</li>
+    </ul>
+    </div>
+</div>
 
 </div>
 
@@ -265,8 +292,6 @@ Ingeniería de software<br>
 <div class="section-title">PROYECTOS</div>
 
 <div class="project-grid">
-
-
 <div class="project">
     <div class="job-title">Landing de Barberia</div>
     <div class="company">Página de presentación para empresa de desarrollo</div>
@@ -298,9 +323,41 @@ Ingeniería de software<br>
         <li>Galería de sistemas</li>
     </ul>
 </div>
+</div>
 
 
+<div class="project-grid">
+<div class="project">
+    <div class="job-title">ChatCGT</div>
+    <div class="company">AI Chat app, con features unicos como bloquear la seleccion del texto generado, obligando al usuario transcribirlo mejorando la retencion de la informacion</div>
+    <div class="date">HTML, CSS, Bootstrap</div>
+    <ul>
+        <li>Diferentes conversaciones</li>
+        <li>Bloquear la seleccion del texto generado</li>
+    </ul>
+</div>
 
+
+<div class="project">
+    <div class="job-title">Alerta NL</div>
+    <div class="company">Scrapper noticias de delincuencia de Nuevo Leon</div>
+    <div class="date">HTML, CSS, JS, Python</div>
+    <ul>
+        <li>Scrapper de noticias con filtro</li>
+        <li>Mapa interactivo</li>
+    </ul>
+</div>
+
+
+<div class="project">
+    <div class="job-title">Tkinter Desktop AI Assistant</div>
+    <div class="company">App de escritorio que te permite hablar con el y abrir programas de tu sistema o apps nativas</div>
+    <div class="date">Python, Tkinter, Os</div>
+    <ul>
+        <li>Dashboard con Estadisticas</li>
+        <li>Galería de sistemas</li>
+    </ul>
+</div>
 </div>
 
 </div>
